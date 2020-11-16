@@ -11,6 +11,8 @@
     "dev:ssr": "ng run rtrw-demo:serve-ssr",
     "serve:ssr": "node dist/rtrw-demo/server/main.js",
     "build:ssr": "ng build --prod && ng run rtrw-demo:server:production",
+    "build:functions": "npm run --prefix functions build",
+    "build:all": "npm run build:ssr && npm run build:functions",
     "prerender": "ng run rtrw-demo:prerender"
   },
   "private": true,
